@@ -5,7 +5,7 @@ export default {
 searchArticles: function(searchTerm) {
     console.log("searching for " + searchTerm);
     const BASEURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-    const APIKEY = "2cbeb5b4fc05451f883d7e8045797b15";
+    const APIKEY = "F8ZrwdUArZsMhEUMSAS2ZYAAp4lW04Kx";
     return axios.get(`${BASEURL}?api-key=${APIKEY}&q=${searchTerm}&sort=newest`);
 },
 //Save article to db
